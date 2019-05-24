@@ -2,6 +2,7 @@ package com.tunedapps.reg.entites;
 
 import lombok.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
 @Builder
 @EqualsAndHashCode(callSuper = true)
 @ToString
+@XmlRootElement
 public class Student extends EntityBase {
 
     private Gender gender;
